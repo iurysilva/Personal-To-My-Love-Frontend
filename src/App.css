@@ -1,0 +1,100 @@
+.App {
+  height: 2vh;
+
+  .Header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    height: 150px;
+    width: 100%;
+    background-color: #6A3F5D;
+    color: white;
+
+    .Header-Title{
+      text-align: center;
+      background-color: red;
+      width: 100%;
+      font-size: small;
+      margin-top: 0;
+    }
+  }
+
+  .Top-Banner{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    padding-top: 100px;
+
+    .Me-And-Her-1{
+      margin-top: 30px;
+      max-width: 600px;
+      max-height: 600px;
+      position: absolute;
+      top: 50%;
+      bottom: 0;
+      left: 50%;
+      right: 0;
+      width: 70%;
+      aspect-ratio: 1/1;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .Division-Bar{
+    background-color: black;
+    height: 80px;
+    position: relative;
+
+    .Leaves{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      right: 0;
+      height: 200px;
+      width: 100%;
+      transform: translate(-50%, 0%);
+      z-index: 2;
+    }
+  }
+
+  .Gallery{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+
+    .Gallery-Title{
+      color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .App {
+    .Top-Banner{
+      .Me-And-Her-1{
+        width: 90%;
+      }
+    }
+  
+    .Division-Bar{
+      height: 40px;
+  
+      .Leaves{
+        height: 100px;
+      }
+    }
+
+    .Gallery{
+      .Gallery-Title{
+        font-size: medium;
+      }
+    }
+  }
+}
