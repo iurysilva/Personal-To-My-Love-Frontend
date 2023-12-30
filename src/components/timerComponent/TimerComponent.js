@@ -22,14 +22,36 @@ const TimerComponent = () => {
 
     return (
     <div className="Timer-Component">
-        <div className="Widget">
-            <div className='Value'>{timeBetween.years()}</div>
-            <div className='Unit'>Anos</div>
-        </div>
+        <div className='Widgets'>
+            <div className="Widget">
+                <h2 className='Value'>{timeBetween.years()}</h2>
+                <h5 className='Unit'>Anos</h5>
+            </div>
 
-        <div className="Widget">
-            <div className='Value'>{timeBetween.months()}</div>
-            <div className='Unit'>Meses</div>
+            <div className="Widget">
+                <h2 className='Value'>{timeBetween.months()}</h2>
+                <h5 className='Unit'>Meses</h5>
+            </div>
+
+            <div className="Widget">
+                <h2 className='Value'>{timeBetween.days()}</h2>
+                <h5 className='Unit'>Dias</h5>
+            </div>
+
+            <div className="Widget">
+                <h2 className='Value'>{timeBetween.hours()}</h2>
+                <h5 className='Unit'>Horas</h5>
+            </div>
+
+            <div className="Widget">
+                <h2 className='Value'>{timeBetween.minutes()}</h2>
+                <h5 className='Unit'>Minutos</h5>
+            </div>
+
+            <div className="Widget">
+                <h2 className='Value'>{timeBetween.seconds()}</h2>
+                <h5 className='Unit'>Segundos</h5>
+            </div>
         </div>
     </div>
   );

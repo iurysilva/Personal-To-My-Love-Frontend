@@ -14,14 +14,20 @@ import leaves from './images/leaves.png'
 function App() {
   return (
     <div className="App">
-      <div className='Header'>
-        <h3 className='Header-Title'>Tempo Juntos</h3>
-        <TimerComponent/>
-      </div>
-
       <div className='Top-Banner'>
         <ParticlesComponent/>
         <img src={me_and_her} className='Me-And-Her-1' alt='me_and_her_1'/>
+      </div>
+
+      <div className='Division-Bar'>
+        <img src={leaves} className='Leaves' alt='leaves'/>
+      </div>
+
+      <div className='Time-Together'>
+        <h2 className='Time-Together-Title'>
+          Tempo que estamos juntos
+        </h2>
+        <TimerComponent/>
       </div>
 
       <div className='Division-Bar'>
