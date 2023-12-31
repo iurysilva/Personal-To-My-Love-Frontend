@@ -3,6 +3,7 @@ import './App.css';
 
 //MODULES AND COMPONENTS
 import React from 'react';
+import {Animated} from "react-animated-css";
 import ParticlesComponent from './components/particlesComponent/ParticlesComponent';
 import GalleryComponent from './components/galleryComponent/GalleryComponent';
 import TimerComponent from './components/timerComponent/TimerComponent';
@@ -17,7 +18,9 @@ function App() {
     <div className="App">
       <div className='Top-Banner'>
         <ParticlesComponent/>
-        <img src={me_and_her} className='Me-And-Her-1' alt='me_and_her_1'/>
+        <Animated animationIn="fadeIn" animationInDelay={1000} animationInDuration={2000} isVisible={true}>
+          <img src={me_and_her} className='Me-And-Her-1' alt='me_and_her_1'/>
+        </Animated>
       </div>
 
       <div className='Division-Bar'>
