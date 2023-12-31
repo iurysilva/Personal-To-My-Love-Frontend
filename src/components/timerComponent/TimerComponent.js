@@ -10,7 +10,6 @@ const targetTime = moment("2023/08/01 12:25:00", "YYYY/MM/DD HH:mm:ss");
 const TimerComponent = () => {
     const [currentTime, setCurrentTime] = useState(moment());
     const timeBetween = moment.duration(currentTime.diff(targetTime));
-    console.log(targetTime)
 
     useEffect(() => {
         const interval = setInterval(() => {

@@ -76,6 +76,7 @@
   }
 
   .Gallery{
+    padding-top: 50px;
     width: 100%;
     background-color: black;
     display: flex;
@@ -84,6 +85,18 @@
     z-index: 1;
 
     .Gallery-Title{
+      color: white;
+    }
+  }
+
+  .Map{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+
+    .Map-Title{
       color: white;
     }
   }
@@ -113,6 +126,12 @@
 
     .Gallery{
       .Gallery-Title{
+        font-size: medium;
+      }
+    }
+
+    .Map{
+      .Map-Title{
         font-size: medium;
       }
     }

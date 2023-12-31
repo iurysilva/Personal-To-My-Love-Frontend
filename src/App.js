@@ -6,6 +6,7 @@ import React from 'react';
 import ParticlesComponent from './components/particlesComponent/ParticlesComponent';
 import GalleryComponent from './components/galleryComponent/GalleryComponent';
 import TimerComponent from './components/timerComponent/TimerComponent';
+import MapComponent from './components/mapComponent/MapComponent';
 
 //IMAGES
 import me_and_her from './images/me_and_her_2.png';
@@ -39,6 +40,13 @@ function App() {
           Algumas das nossas melhores fotos!
         </h2>
         <GalleryComponent/>
+      </div>
+
+      <div className='Map'>
+        <h2 className='Map-Title'>
+          Todos os lugares que visitamos juntos!
+        </h2>
+        <MapComponent/>
       </div>
     </div>
 
