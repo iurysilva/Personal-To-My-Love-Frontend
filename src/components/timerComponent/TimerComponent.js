@@ -5,7 +5,7 @@ import './TimerComponent.css';
 import React, { useEffect, useState } from "react";
 import moment from "moment";
 
-const targetTime = moment("2023/08/01 12:25:00", "YYYY/MM/DD HH:mm:ss");
+const targetTime = moment("2023/07/31 20:59:59", "YYYY/MM/DD HH:mm:ss");
 
 const TimerComponent = () => {
     const [currentTime, setCurrentTime] = useState(moment());

@@ -10,7 +10,7 @@ import TimerComponent from './components/timerComponent/TimerComponent';
 import MapComponent from './components/mapComponent/MapComponent';
 
 //IMAGES
-import me_and_her from './images/me_and_her_2.png';
+import me_and_her from './images/me_and_her_12.png';
 import leaves from './images/leaves.png'
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <div className='Top-Banner'>
         <ParticlesComponent/>
         <Animated animationIn="fadeIn" animationInDelay={1000} animationInDuration={2000} isVisible={true}>
-          <img src={me_and_her} className='Me-And-Her-1' alt='me_and_her_1'/>
+          <img src={me_and_her} className='Top-Banner-Image' alt='me_and_her_12'/>
         </Animated>
       </div>
 
